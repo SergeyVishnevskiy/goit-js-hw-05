@@ -11,6 +11,23 @@
 // removeItem(item) - получет товар и, если он есть, удаляет его из текущих
 //======================decision=================\\
 
+class  Storage {
+  constructor (arrayItems) {
+    this.items = arrayItems
+  }
+  getItems(){
+    return this.items;
+  }
+  addItem(item){
+    return this.items.push(item);
+  }
+  removeItem(item) {
+    if (this.items.includes(item)) {
+      this.items.splice(this.items.indexOf(item), 1);
+    }
+  }
+}
+
 const storage = new Storage([
   'Нанитоиды',
   'Пролонгер',
