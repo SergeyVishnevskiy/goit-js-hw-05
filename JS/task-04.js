@@ -33,13 +33,16 @@ class StringBuilder {
 
 const builder = new StringBuilder(".");
 
-builder.append("^");
-console.log(builder.value); // '.^'
+// builder.append("^");
+// console.log(builder.value); // '.^'
 
-builder.prepend("^");
-console.log(builder.value); // '^.^'
+// builder.prepend("^");
+// console.log(builder.value); // '^.^'
 
-builder.pad("=");
-console.log(builder.value); // '=^.^='
+// builder.pad("=");
+// console.log(builder.value); // '=^.^='
 
+// const resume = builder.append("^") + builder.prepend("^") + builder.pad("=");
+// builder.append("^").prepend("^").pad("=");
+console.log(builder.value);
 //================================================\\
