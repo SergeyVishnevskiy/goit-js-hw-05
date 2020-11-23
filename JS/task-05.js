@@ -44,7 +44,7 @@
 
 //======================decision=================\\
 class Car {
-  static getSpecs({ speed = 0, price, maxSpeed, isOn = false, distance = 0 }) {
+  static getSpecs({ speed, price, maxSpeed, isOn, distance }) {
     console.log(
       `maxSpeed: ${maxSpeed}, speed: ${speed}, isOn: ${isOn}, distance: ${distance}, price: ${price}`
     );
